@@ -1,0 +1,70 @@
+
+
+npm i yargs --save
+
+npm install colors --save
+
+----------------- git ----------------------
+
+1. Nos posicionamos en la carpeta de nuestro proyecto
+2. Ejecutamos el comando
+    git init
+3. En VSC creamos el archivo llamado .gitignore
+4. Editamos el archivo del punto anterior e incluimos los archivos y carpetas que no deseamos respaldar en git
+5. Con el comando git status lo que observamos son todos aquellos archivos y carpetas que son candidatos a subir a git
+6. Para crear "una fotografía" de mi proyecto o snapshot en git (respaldo) escribamos el siguiente comando 
+    git add .
+con lo anterior le "decimos" a git que todos los archivoc y/o carpetas de nuestro respositorio queremos que se copien (respalden) en git,
+si escribimos
+      git status
+entonces veremos en verde todos los archicos y carpetas que están listos para irse a git.
+7. Ahora escribimos el comando
+     git commit -m "Commit Inicial"
+8. Si ejecutamos nuevamente el 
+          git status
+indica que esta trabajando en "la rama maestra" 	
+9. Enseguida nos firmamos en nuestra cuenta de git
+10.Creamos un nuevo respositorio "New Repository" y le damos un nombre, agregamos una descripción al respositorio y dejamos todos los demás 
+datos intactos y pulsamos el botón "Create Repository"
+11. En la siguiente página dejamos la opción https y tecleamos los siguientes comandos, en el orden que se indica
+
+git remote add origin https://github.com/mbauoso69/03 PorHacer.git
+git push -u origin master
+
+Con lo anterior se crea el respaldo en git.
+
+12. se refresca la página y ya aparece nuestro respaldo.  
+13. Ahora se creará un archivo dentro de la carpeta (en nuestra máquina) de nuestro proyecto llamado 
+           README.md
+es importante indicarlo con mayúsculas y la terminación md de Mackdown, una especie de HTML más básico. En este archivo se escribe
+todo lo que deseamos mostrar de nuestro proyecto, por ejemplo, lo siguiente 
+
+   ## Multiplicar console App
+   
+   Esta es una aplicación para generr tablas de multiplicar y guardarlas en archivos, de acuerdo a los parámetros.
+   
+   Ejecutar este comando ...
+   
+   node app1 ...
+14. Por último se hará un nuevo commit o respaldo para subir este archivo README.md, para ello se teclea en la terminal lo siguiente
+   git status
+   git add .
+   git remote add origin https://github.com/mbauoso69/03 PorHacer.git
+   git push
+
+15. Para crear un paquete para poder descargarlo cómodamente hacemos lo siguiente, primero ponemos 
+una etiqueta o tag así:
+
+            git tag -a v1.0.0 -m "Primera versión"
+
+Ahora si tecleamos
+
+            git tag
+
+se observa que tenemos solo la versión 1.0.0
+
+
+ 
+	
+
+
